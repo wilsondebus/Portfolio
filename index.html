@@ -1,68 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Wilson Dias Debus</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal.">
+  <title>Início | Wilson Debus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
-
 <body>
+  <div class="background-code" aria-hidden="true"></div>
 
-<header class="cabecalho">
-    <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Ir para o início">
+      <span class="logo-bracket">&lt;</span>WilsonDiasDebus<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link active" href="index.html"><span>01.</span> Início</a>
+      <a class="nav-link" href="sobre.html"><span>02.</span> Sobre mim</a>
+      <a class="nav-link" href="projetos.html"><span>03.</span> Projetos</a>
+      <a class="nav-link" href="github.html"><span>04.</span> GitHub Stats</a>
+      <a class="nav-link" href="stack-contato.html"><span>05.</span> Stack & Contato</a>
     </nav>
-</header>
+  </header>
 
-<main class="apresentacao">
+  <main class="home-page page-container">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="code-line"><span class="keyword">const</span> <span class="variable">desenvolvedor</span> = {</p>
+        <h1>Olá, eu sou <span>Wilson Debus</span></h1>
+        <p class="hero-role">Desenvolvedor de Software em formação</p>
 
-<section class="apresentacao__conteudo">
+        <div class="personal-data code-window">
+          <div class="window-bar">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <p>perfil.js</p>
+          </div>
+          <div class="code-content">
+            <p><span class="property">faculdade</span>: <span class="string">Universidade Franciscana - UFN</span>,</p>
+            <p><span class="property">cidade</span>: <span class="string">Santa Maria - RS</span>,</p>
+            <p><span class="property">trabalhoAtual</span>: <span class="string">LED OUTDOOR Plugin Eventos</span></p>
+          </div>
+        </div>
 
-<h1 class="apresentacao__conteudo__titulo">
-Desenvolvimento de software e soluções digitais 
-<strong class="titulo-destaque">com foco em qualidade e aprendizado contínuo</strong>
-</h1>
+        <p class="code-line">};<span class="cursor" aria-hidden="true"></span></p>
+        <a class="primary-button" href="sobre.html">Mais informações...<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
 
-<p class="apresentacao__conteudo__texto">
-Sou <strong>Wilson Dias Debus</strong>, estudante de <strong>Ciência da Computação na Universidade Franciscana (UFN)</strong> 
-e bolsista integral pelo ProUni. Tenho foco em desenvolvimento back-end com maior familiaridade em <strong>Java</strong>, 
-além de experiência com <strong>Python, C, C++, HTML, CSS e JavaScript</strong>.
+      <div class="hero-visual">
+        <div class="profile-frame">
+          <div class="editor-label"><i class="fa-regular fa-image"></i> perfil.png</div>
+          <img src="assets/images/foto-perfil-placeholder.svg" alt="Substitua esta imagem por uma foto pessoal em estilo desenho de lápis">
+          <div class="image-overlay-code" aria-hidden="true">
+            <span>public class Developer {</span>
+            <span>&nbsp;&nbsp;void buildIdeas() {</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;learn(); code(); evolve();</span>
+            <span>&nbsp;&nbsp;}</span>
+            <span>}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-Participo de projetos acadêmicos e pessoais envolvendo lógica de programação, orientação a objetos, 
-automação de tarefas e análise de dados. Busco minha primeira oportunidade na área de tecnologia 
-para desenvolver soluções eficientes e evoluir profissionalmente.
-</p>
-
-<div class="apresentacao__links">
-
-<h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-
-<a class="apresentacao__links__navegacao" href="https://instagram.com/wilsondebus_">
-Instagram
-</a>
-
-<a class="apresentacao__links__navegacao" href="https://github.com/wilsondebus">
-GitHub
-</a>
-
-<a class="apresentacao__links__navegacao" href="https://linkedin.com/in/wilson-dias-debus-a92a69358">
-LinkedIn
-</a>
-
-</div>
-
-</section>
-
-<img class="apresentacao__imagem" src="FotoPerfil.jpeg" alt="Foto de Wilson Dias Debus">
-
-</main>
-
-<footer class="rodape">
-<p>Desenvolvido por Wilson Dias Debus.</p>
-</footer>
-
+  <footer class="site-footer">
+    <p><span>&lt;/&gt;</span> Desenvolvido por Wilson Dias Debus — <span id="current-year"></span></p>
+  </footer>
 </body>
 </html>

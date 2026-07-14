@@ -1,64 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos | Wilson Dias Debus</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos concluídos e em desenvolvimento.">
+  <title>Projetos | Wilson Debus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
-
 <body>
-
-<header class="cabecalho">
-    <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+  <div class="background-code" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-bracket">&lt;</span>WilsonDiasDebus<span class="logo-bracket">/&gt;</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link" href="index.html"><span>01.</span> Início</a>
+      <a class="nav-link" href="sobre.html"><span>02.</span> Sobre mim</a>
+      <a class="nav-link active" href="projetos.html"><span>03.</span> Projetos</a>
+      <a class="nav-link" href="github.html"><span>04.</span> GitHub Stats</a>
+      <a class="nav-link" href="stack-contato.html"><span>05.</span> Stack & Contato</a>
     </nav>
-</header>
+  </header>
 
-<main class="projetos">
+  <main class="page-container internal-page">
+    <section class="section-heading">
+      <h1><span>03.</span> Meus projetos</h1>
+      <div class="heading-line"></div>
+    </section>
 
-<h1 class="projetos__titulo">Meus Projetos</h1>
+    <div class="project-tabs" role="tablist" aria-label="Categorias de projetos">
+      <button class="tab-button active" type="button" data-project-tab="concluidos" role="tab" aria-selected="true">
+        <i class="fa-solid fa-circle-check"></i> Projetos concluídos
+      </button>
+      <button class="tab-button" type="button" data-project-tab="andamento" role="tab" aria-selected="false">
+        <i class="fa-solid fa-code"></i> Projetos em andamento
+      </button>
+    </div>
 
-<div class="projetos__container">
+    <section class="projects-grid tab-content active" id="concluidos" data-project-content="concluidos">
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto"></div>
+        <div class="project-body">
+          <div class="project-status finished"><i class="fa-solid fa-check"></i> Concluído</div>
+          <h2>Previsão de Score de Crédito com Machine Learning</h2>
+          <p>Este projeto tem como objetivo desenvolver um modelo de Machine Learning capaz de prever o score de crédito de clientes com base em características financeiras e comportamentais.</p>
+          <div class="project-tech"><span>Python</span><span>Jupyter Notebook</span><span>Pandas</span><span>Scikit-learn</span></div>
+          <div class="project-links">
+            <a href="https://github.com/wilsondebus/Projeto-Previsao-IA" aria-label="Abrir repositório do projeto"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </div>
+      </article>
 
-<div class="projeto__card">
-<h2 class="projeto__titulo">Previsão de Score de Crédito</h2>
-<p class="projeto__descricao">
-Projeto em Python utilizando análise de dados e machine learning.
-</p>
-<a class="projeto__botao" href="https://github.com/wilsondebus/Projeto-Previsao-IA">
-Ver no GitHub
-</a>
-</div>
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto"></div>
+        <div class="project-body">
+          <div class="project-status finished"><i class="fa-solid fa-check"></i> Concluído</div>
+          <h2>Automação de Cadastro de Produtos</h2>
+          <p>Projeto desenvolvido em Python para automatizar o processo de cadastro de produtos em um sistema web da empresa, utilizando automação de teclado e mouse.</p>
+          <div class="project-tech"><span>Python</span><span>PyAutoGUI</span><span>Pandas</span></div>
+          <div class="project-links">
+            <a href="https://github.com/wilsondebus/Automacao-Cadastramento-Produtos"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </div>
+      </article>
 
-<div class="projeto__card">
-<h2 class="projeto__titulo">Automação de Cadastro de Produtos</h2>
-<p class="projeto__descricao">
-Automação em Python para cadastro automático de produtos em sistema online.
-</p>
-<a class="projeto__botao" href="https://github.com/wilsondebus/Automacao-Cadastramento-Produtos">
-Ver no GitHub
-</a>
-</div>
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto"></div>
+        <div class="project-body">
+          <div class="project-status finished"><i class="fa-solid fa-check"></i> Concluído</div>
+          <h2>Análise de Cancelamento de Clientes (Churn Analysis)</h2>
+          <p>Projeto de análise de dados desenvolvido em Python com o objetivo de identificar os principais fatores que levam clientes ao cancelamento de contrato.
+            A partir de uma base de dados (cancelamentos.csv), foram realizadas etapas de tratamento, análise exploratória e simulação de cenários para redução da taxa de churn.</p>
+          <div class="project-tech"><span>Python</span><span>Jupyter Notebook</span><span>Pandas</span></div>
+          <div class="project-links">
+            <a href="https://github.com/wilsondebus/Analise-de-Dados"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </div>
+      </article>
 
-<div class="projeto__card">
-<h2 class="projeto__titulo">Análise de Cancelamento de Clientes</h2>
-<p class="projeto__descricao">
-Análise de dados para identificar fatores associados ao cancelamento de clientes.
-</p>
-<a class="projeto__botao" href="https://github.com/wilsondebus/Analise-de-Dados">
-Ver no GitHub
-</a>
-</div>
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto"></div>
+        <div class="project-body">
+          <div class="project-status finished"><i class="fa-solid fa-check"></i> Concluído</div>
+          <h2>Jogo Detetive Lógico</h2>
+          <p>O Detetive Lógico é um jogo web desenvolvido como Produto de Aprendizagem da disciplina de Lógica para Computação. O objetivo do projeto é aplicar, de forma prática e interativa, conteúdos relacionados à lógica proposicional e às técnicas dedutivas estudadas em aula.</p>
+          <div class="project-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/wilsondebus/Jogo-Detetive-TecnicasDeducao"><i class="fa-brands fa-github"></i> Código</a>
+            <a href="https://wilsondebus.github.io/Jogo-Detetive-TecnicasDeducao/"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
 
-</div>
+        <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto"></div>
+        <div class="project-body">
+          <div class="project-status finished"><i class="fa-solid fa-check"></i> Concluído</div>
+          <h2>Gerenciamento e troca de figurinhas da Copa do Mundo 2026.</h2>
+          <p>O sistema permite cadastrar, listar e comparar figurinhas repetidas e desejadas, além de identificar possíveis matches entre usuários.</p>
+          <div class="project-tech"><span>Java</span><span>arquivos.CSV</span></div>
+          <div class="project-links">
+            <a href="https://github.com/wilsondebus/Estrutura-De-Dados/tree/main/Aula%2014/Troca%20de%20Figurinhas"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </div>
+      </article>
+    </section>
 
-</main>
+    <section class="projects-grid tab-content" id="andamento" data-project-content="andamento" hidden>
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto em andamento"></div>
+        <div class="project-body">
+          <div class="project-status building"><i class="fa-solid fa-spinner"></i> Em desenvolvimento</div>
+          <h2>Sistema para LED OUTDOOR Plugin Eventos</h2>
+          <p>Projeto em desenvolvimento para gerenciar as operações da Plugin Eventos, reunindo controle de estoque, vendas, locações, clientes, fornecedores e movimentações de equipamentos. O sistema também permitirá acompanhar a saída e a devolução dos itens utilizados em eventos, facilitando a conferência dos equipamentos e a organização das atividades da empresa.</p>
+          <div class="project-tech"><span>Java</span><span>Spring Boot</span><span>PostgreeSQL</span><span>HTML</span><span>CSS</span></div>
+          <div class="project-progress" aria-label="Progresso estimado do projeto">
+            <div class="progress-label"><span>Progresso</span><span>[20%]</span></div>
+            <div class="progress-track"><span style="width: 45%"></span></div>
+          </div>
+          <div class="project-links"><a href="https://github.com/wilsondebus/Led-Outdoor-Plugin-Eventos"><i class="fa-brands fa-github"></i> Repositório</a></div>
+        </div>
+      </article>
 
-<footer class="rodape">
-<p>Desenvolvido por Wilson Dias Debus.</p>
-</footer>
+      <article class="project-card">
+        <div class="project-image"><img src="assets/images/projetos/projeto-placeholder.svg" alt="Imagem do projeto em andamento"></div>
+        <div class="project-body">
+          <div class="project-status building"><i class="fa-solid fa-spinner"></i> Em desenvolvimento</div>
+          <h2>Front-End do Sistema Gerenciador de Figurinhas</h2>
+          <p>Integrar o Sistema Gerenciador de figurinhas da Copa de 2026 com um front-end</p>
+          <div class="project-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="project-progress">
+            <div class="progress-label"><span>Progresso</span><span>[05%]</span></div>
+            <div class="progress-track"><span style="width: 25%"></span></div>
+          </div>
+          <div class="project-links"><a href="#"><i class="fa-brands fa-github"></i> Repositório</a></div>
+        </div>
+      </article>
+    </section>
+  </main>
 
+  <footer class="site-footer"><p><span>&lt;/&gt;</span> Desenvolvido por Wilson Dias Debus — <span id="current-year"></span></p></footer>
 </body>
 </html>

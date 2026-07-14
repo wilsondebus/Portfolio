@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#201031"/><stop offset="1" stop-color="#0b0611"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#a)"/>
+  <rect x="110" y="100" width="1060" height="520" rx="24" fill="#12091e" stroke="#59348a" stroke-width="3"/>
+  <rect x="110" y="100" width="1060" height="65" rx="24" fill="#1b0d2a"/>
+  <circle cx="155" cy="132" r="9" fill="#fb7185"/><circle cx="185" cy="132" r="9" fill="#facc15"/><circle cx="215" cy="132" r="9" fill="#4ade80"/>
+  <g font-family="monospace" font-size="28">
+    <text x="160" y="250" fill="#e879f9">function</text><text x="315" y="250" fill="#7dd3fc"> projeto</text><text x="450" y="250" fill="#e8e1f5">() {</text>
+    <text x="210" y="315" fill="#b794f6">imagem:</text><text x="365" y="315" fill="#86efac"> "adicione sua capa"</text><text x="755" y="315" fill="#e8e1f5">,</text>
+    <text x="210" y="380" fill="#b794f6">status:</text><text x="365" y="380" fill="#86efac"> "personalize"</text><text x="660" y="380" fill="#e8e1f5">,</text>
+    <text x="210" y="445" fill="#b794f6">deploy:</text><text x="365" y="445" fill="#fde68a"> true</text>
+    <text x="160" y="510" fill="#e8e1f5">}</text>
+  </g>
+</svg>

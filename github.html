@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estatísticas e atividade no GitHub.">
+  <title>GitHub Stats | Wilson Debus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <div class="background-code" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-bracket">&lt;</span>WilsonDiasDebus<span class="logo-bracket">/&gt;</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link" href="index.html"><span>01.</span> Início</a>
+      <a class="nav-link" href="sobre.html"><span>02.</span> Sobre mim</a>
+      <a class="nav-link" href="projetos.html"><span>03.</span> Projetos</a>
+      <a class="nav-link active" href="github.html"><span>04.</span> GitHub Stats</a>
+      <a class="nav-link" href="stack-contato.html"><span>05.</span> Stack & Contato</a>
+    </nav>
+  </header>
+
+  <main class="page-container internal-page">
+    <section class="section-heading">
+      <h1><span>04.</span> GitHub Stats</h1>
+      <div class="heading-line"></div>
+    </section>
+
+    <section class="github-intro content-panel">
+      <div>
+        <h2>Minha atividade como desenvolvedor</h2>
+      </div>
+      <a class="primary-button" href="https://github.com/wilsondebus" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Abrir perfil</a>
+    </section>
+
+    <section class="contributions-panel content-panel">
+      <h2><i class="fa-solid fa-code-commit"></i> Histórico de contribuições</h2>
+      <div class="contribution-scroll">
+        <img src="https://ghchart.rshah.org/8b5cf6/wilsondebus" alt="Calendário de contribuições do GitHub">
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card large-stat">
+        <h2><i class="fa-solid fa-chart-simple"></i> Estatísticas gerais</h2>
+        <img src="https://github-readme-stats.vercel.app/api?username=wilsondebus&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d0718&title_color=b794f6&icon_color=8b5cf6&text_color=e8e1f5" alt="Estatísticas gerais do GitHub">
+      </article>
+
+      <article class="stat-card large-stat">
+        <h2><i class="fa-solid fa-code"></i> Linguagens mais usadas</h2>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wilsondebus&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d0718&title_color=b794f6&text_color=e8e1f5" alt="Linguagens mais utilizadas no GitHub">
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer"><p><span>&lt;/&gt;</span> Desenvolvido por Wilson Dias Debus — <span id="current-year"></span></p></footer>
+</body>
+</html>
