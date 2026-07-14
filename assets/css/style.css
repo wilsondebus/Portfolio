@@ -298,7 +298,7 @@ code { color: var(--pink); font-family: var(--font-code); }
 .project-status.building { color: var(--yellow); background: rgba(250, 204, 21, 0.07); border: 1px solid rgba(250, 204, 21, 0.18); }
 .project-tech { display: flex; flex-wrap: wrap; gap: 7px; margin: 18px 0; }
 .project-tech span { color: var(--primary-light); background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.17); border-radius: 5px; padding: 4px 7px; font: 0.65rem var(--font-code); }
-.project-links { display: flex; align-items: center; gap: 16px; border-top: 1px solid var(--border); padding-top: 16px; }
+.project-links { display: flex; align-items: center; gap: 16px; border-top: none solid var(--border); padding-top: 16px; }
 .project-links a { color: var(--text-muted); font: 600 0.74rem var(--font-code); text-decoration: none; transition: color 0.2s; }
 .project-links a:hover { color: var(--primary-light); }
 .project-progress { margin: 18px 0; }
