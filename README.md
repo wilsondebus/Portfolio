@@ -1,6 +1,6 @@
 # Portfólio pessoal 
 
-Portfólio responsivo desenvolvida em HTML, CSS e JavaScript puro, com visual inspirado no VS Code/IntellJ. 
+Portfólio responsivo desenvolvido em HTML, CSS e JavaScript puro, com visual inspirado no VS Code/IntellJ. 
 
 ## Páginas
 
