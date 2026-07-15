@@ -1,6 +1,6 @@
-# Portfólio pessoal — tema IDE
+# Portfólio pessoal 
 
-Estrutura de portfólio responsivo desenvolvida em HTML, CSS e JavaScript puro, com visual inspirado no VS Code/IntelliJ e paleta roxa escura.
+Portfólio responsivo desenvolvida em HTML, CSS e JavaScript puro, com visual inspirado no VS Code/IntellJ. 
 
 ## Páginas
 
