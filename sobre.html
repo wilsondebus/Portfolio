@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Informações profissionais e acadêmicas.">
+  <meta name="description" content="Informações profissionais, certificações e trajetória de Wilson Dias Debus.">
   <title>Sobre mim | Wilson Dias Debus</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,102 +32,383 @@
       <div class="heading-line"></div>
     </section>
 
-    <section class="about-grid">
-      <article class="content-panel about-text">
-        <h2>Me conheça</h2>
-        <p>Sou estudante de Ciência da Computação na Universidade Franciscana (UFN), onde curso o Bacharelado com bolsa integral e previsão de conclusão em 2029. Tenho interesse especial em desenvolvimento back-end, com maior familiaridade em Java, Programação Orientada a Objetos, Estruturas de Dados e Lógica de Programação.
+    <section class="about-tabs" aria-label="Conteúdo sobre mim">
+      <div class="about-tab-list" role="tablist" aria-label="Seções da página Sobre mim">
+        <button class="about-tab-button active" type="button" role="tab" aria-selected="true" aria-controls="painel-conheca" data-about-tab="conheca">
+          <i class="fa-solid fa-user"></i> Me conheça
+        </button>
+        <button class="about-tab-button" type="button" role="tab" aria-selected="false" aria-controls="painel-certificacoes" data-about-tab="certificacoes">
+          <i class="fa-solid fa-certificate"></i> Certificações
+        </button>
+        <button class="about-tab-button" type="button" role="tab" aria-selected="false" aria-controls="painel-trajetoria" data-about-tab="trajetoria">
+          <i class="fa-solid fa-code-branch"></i> Linha do tempo
+        </button>
+      </div>
 
-          Ao longo da graduação, venho construindo uma base técnica por meio de disciplinas como Algoritmos, Programação de Sistemas, Engenharia e Requisitos de Software, Projeto de Banco de Dados, Probabilidade e Estatística e Cálculo. Também atuo no desenvolvimento de projetos acadêmicos e pessoais envolvendo automação de tarefas, análise de dados, desenvolvimento de sistemas e aplicações web.
+      <div class="about-tab-content active" id="painel-conheca" role="tabpanel" data-about-content="conheca">
+        <article class="content-panel about-profile-panel">
+          <div class="about-profile-header">
+            <div>
+              <h2>Me conheça</h2>
+            </div>
+            <span class="about-status"><span></span> Disponível para oportunidades</span>
+          </div>
 
-          Atualmente, trabalho como Estagiário Comercial na LED OUTDOOR / Plugin Eventos, atuando com prospecção, atendimento ao cliente, elaboração de propostas e apoio em negociações. Essa experiência tem fortalecido minhas habilidades de comunicação, organização, negociação, relacionamento com clientes, visão de negócio e resolução de problemas.
+          <div class="about-summary-grid">
+            <div class="about-text">
+              <p>Sou estudante de Ciência da Computação na Universidade Franciscana (UFN), onde curso o Bacharelado com bolsa integral e previsão de conclusão em 2029. Tenho interesse especial em desenvolvimento back-end, com maior familiaridade em Java, Programação Orientada a Objetos, Estruturas de Dados e Lógica de Programação.</p>
+              <p>Ao longo da graduação, venho construindo uma base técnica por meio de disciplinas como Algoritmos, Programação de Sistemas, Engenharia e Requisitos de Software, Projeto de Banco de Dados, Probabilidade e Estatística e Cálculo. Também desenvolvo projetos acadêmicos e pessoais envolvendo automação de tarefas, análise de dados, desenvolvimento de sistemas e aplicações web.</p>
+              <p>Atualmente, trabalho como Estagiário Comercial na LED OUTDOOR / Plugin Eventos, atuando com prospecção, atendimento ao cliente, elaboração de propostas e apoio em negociações. Essa experiência fortalece minhas habilidades de comunicação, organização, visão de negócio e resolução de problemas.</p>
+              <p>Busco minha primeira oportunidade como Desenvolvedor Back-end Júnior ou Estagiário em Desenvolvimento de Software, para aplicar meus conhecimentos em projetos reais, aprimorar minhas habilidades técnicas e contribuir com soluções eficientes e bem estruturadas.</p>
+            </div>
 
-          Também já atuei como Monitor Acadêmico da disciplina de Algoritmos e Programação A, auxiliando estudantes na compreensão de lógica de programação, resolução de exercícios, organização de código e interpretação de problemas computacionais. Essa experiência contribuiu para o desenvolvimento da minha comunicação técnica, didática e capacidade de explicar conceitos com clareza.
+            <aside class="about-highlights" aria-label="Destaques do perfil">
+              <div class="highlight-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Formação</strong><span>Ciência da Computação — UFN</span></div>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-code"></i>
+                <div><strong>Foco</strong><span>Desenvolvimento Back-end</span></div>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-brands fa-java"></i>
+                <div><strong>Principal linguagem</strong><span>Java</span></div>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div><strong>Localização</strong><span>Santa Maria — RS</span></div>
+              </div>
+            </aside>
+          </div>
 
-          Além disso, possuo experiência como Microempreendedor Individual, com atuação em rotinas administrativas, organização financeira e processos de licitações eletrônicas, e também já trabalhei com suporte em sistemas para energia solar, adquirindo vivência prática em suporte técnico e operação de sistemas.
+          <a class="resume-button" href="assets/curriculo/meu-curriculo.pdf" download>
+            <i class="fa-solid fa-file-arrow-down"></i> Baixar currículo
+          </a>
+        </article>
+      </div>
 
-          Na área de tecnologia, possuo conhecimentos em Java, Spring Boot, Python, C, C++, JavaScript, HTML e CSS. Também busco ampliar continuamente meus conhecimentos por meio de cursos e certificações em plataformas como Alura, DIO e Hashtag Treinamentos, com conteúdos relacionados a desenvolvimento web, Git e GitHub, Java, Python, lógica de programação e transformação digital.
+      <div
+        class="about-tab-content"
+        id="painel-certificacoes"
+        role="tabpanel"
+        data-about-content="certificacoes"
+        hidden
+      >
+        <section class="content-panel">
+          <div class="panel-heading-row">
+            <div>
+              <h2>Certificações</h2>
+            </div>
+          </div>
 
-          Busco minha primeira oportunidade como Desenvolvedor Back-end Júnior ou Estagiário em Desenvolvimento de Software, onde possa aplicar meus conhecimentos em projetos reais, aprimorar minhas habilidades técnicas e contribuir com o desenvolvimento de soluções eficientes e bem estruturadas.
+          <div class="certificates-grid">
 
-          Sou uma pessoa proativa, disciplinada, responsável e comprometida com o aprendizado contínuo, com facilidade para trabalhar em equipe, aprender novas tecnologias e enfrentar desafios.</p>
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado JavaScript e HTML"
+              >
+                <img
+                  src="assets/images/certificados/JavaScript-HTML.png"
+                  alt="Certificado JavaScript e HTML"
+                >
+              </button>
 
-        <a class="resume-button" href="assets/curriculo/meu-curriculo.pdf" download>
-          <i class="fa-solid fa-file-arrow-down"></i>
-          Baixar currículo
-        </a>
+              <div class="certificate-body">
+                <span class="certificate-institution">Alura</span>
+                <h3>JavaScript e HTML: lógica de programação</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 16 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado HTML e CSS"
+              >
+                <img
+                  src="assets/images/certificados/Classes-Posicionamentos.png"
+                  alt="Certificado HTML e CSS"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">Alura</span>
+                <h3>HTML e CSS: Classes, posicionamento e Flexbox</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 8 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado Jornada Python"
+              >
+                <img
+                  src="assets/images/certificados/Jornada Python.png"
+                  alt="Certificado Jornada Python"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">Hashtag Treinamentos</span>
+                <h3>Jornada Python</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 8 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado Git e GitHub"
+              >
+                <img
+                  src="assets/images/certificados/Git-GitHub.png"
+                  alt="Certificado Git e GitHub"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">DIO</span>
+                <h3>Git e GitHub — Primeiros Passos</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 2 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado Introdução à Plataforma Java"
+              >
+                <img
+                  src="assets/images/certificados/Plataforma-Java.png"
+                  alt="Certificado Introdução à Plataforma Java"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">DIO</span>
+                <h3>Introdução à Plataforma Java</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 1 hora
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado ambientes de desenvolvimento"
+              >
+                <img
+                  src="assets/images/certificados/Arquivos-Tags.png"
+                  alt="Certificado ambientes de desenvolvimento, arquivos e tags"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">Alura</span>
+                <h3>HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 8 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado cabeçalho, footer e variáveis CSS"
+              >
+                <img
+                  src="assets/images/certificados/Footer-VariaveisCSS.png"
+                  alt="Certificado cabeçalho, footer e variáveis CSS"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">Alura</span>
+                <h3>HTML e CSS: cabeçalho, footer e variáveis CSS</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 6 horas
+                </p>
+              </div>
+            </article>
+
+            <article class="certificate-card">
+              <button
+                class="certificate-image"
+                type="button"
+                aria-label="Visualizar certificado Portfólio Vencedor"
+              >
+                <img
+                  src="assets/images/certificados/Portfolio-Vencedor.png"
+                  alt="Certificado Portfólio Vencedor"
+                >
+              </button>
+
+              <div class="certificate-body">
+                <span class="certificate-institution">DIO</span>
+                <h3>Desafios de Projetos: Crie um Portfólio Vencedor</h3>
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  Carga horária: 1 hora
+                </p>
+              </div>
+            </article>
+
+      <article class="certificate-card">
+        <button
+          class="certificate-image"
+          type="button"
+          aria-label="Visualizar certificado Transformação Digital"
+        >
+          <img
+            src="assets/images/certificados/Transformacao-Digital.png"
+            alt="Certificado Transformação Digital"
+          >
+        </button>
+
+        <div class="certificate-body">
+          <span class="certificate-institution">Alura</span>
+          <h3>Transformação Digital</h3>
+          <p>
+            <i class="fa-regular fa-clock"></i>
+            Carga horária: 8 horas
+          </p>
+        </div>
       </article>
 
-      <aside class="timeline-panel content-panel">
-        <h2><i class="fa-solid fa-code-branch"></i> Linha do tempo</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Consultor de Vendas | LED OUTDOOR Plugin Eventos</h3>
-            <p>Atuação na área comercial, com foco em prospecção, atendimento ao cliente,
-              elaboração de propostas e apoio em negociações.</p>
+    </div>
+  </section>
+</div>
+
+      <div class="about-tab-content" id="painel-trajetoria" role="tabpanel" data-about-content="trajetoria" hidden>
+        <section class="timeline-workspace">
+          <div class="content-panel career-list-panel">
+            <h2>Linha do tempo</h2>
+            <p class="timeline-instruction"><i class="fa-solid fa-arrow-pointer"></i> Clique em uma experiência para visualizar os detalhes.</p>
+
+            <div class="career-timeline" role="list">
+              <button class="career-item active" type="button" data-career="led" aria-pressed="true">
+                <span class="career-marker"></span>
+                <span class="career-period">2026 — atual</span>
+                <strong>Estagiário Comercial</strong>
+                <small>LED OUTDOOR / Plugin Eventos</small>
+              </button>
+
+              <button class="career-item" type="button" data-career="monitoria" aria-pressed="false">
+                <span class="career-marker"></span>
+                <span class="career-period">2026</span>
+                <strong>Monitor Acadêmico</strong>
+                <small>Universidade Franciscana — UFN</small>
+              </button>
+
+              <button class="career-item" type="button" data-career="mei" aria-pressed="false">
+                <span class="career-marker"></span>
+                <span class="career-period">Experiência anterior</span>
+                <strong>Microempreendedor Individual</strong>
+                <small>Atuação autônoma</small>
+              </button>
+
+              <button class="career-item" type="button" data-career="solar" aria-pressed="false">
+                <span class="career-marker"></span>
+                <span class="career-period">2024</span>
+                <strong>Suporte em sistemas para energia solar</strong>
+                <small>Suporte técnico e operação</small>
+              </button>
+            </div>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Monitor Acadêmico | Algoritmos e Programação A</h3>
-            <p>Atuei como monitor da disciplina de Algoritmos e Programação A, auxiliando estudantes
-              na compreensão de lógica de programação, resolução de exercícios e desenvolvimento
-              do raciocínio algorítmico.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Curso | Certificação </h3>
-            <p>Git e Github - Primeiros Passos | DIO</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Curso | Certificação </h3>
-            <p>Introdução a plataforma Java | DIO</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Curso | Certificação </h3>
-            <p>Desafios de Projeto | DIO</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2026</p>
-            <h3>Curso | Certificação </h3>
-            <p>Jornada Python | HashTag</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2024</p>
-            <h3>Suporte em sistemas para energia solar</h3>
-            <p>Apoio em instalação e aplicação de sistemas, com vivência prática em suporte técnico e
-              operação.</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2024</p>
-            <h3>Curso | Certificação </h3>
-            <p>JavaScript e HTML: desenvolva um jogo e pratique lógica de programação | ALURA</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2024</p>
-            <h3>Curso | Certificação </h3>
-            <p>HTML e CSS: Classes, posicionamento e Flexbox | ALURA</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-marker"></span>
-            <p class="timeline-date">2024</p>
-            <h3>Curso | Certificação </h3>
-            <p>Transformação Digital: tecnologias | ALURA</p>
-          </div>
-        </div>
-      </aside>
+
+          <article class="content-panel career-detail-panel" aria-live="polite">
+            <div class="career-detail active" data-career-detail="led">
+              <span class="career-detail-tag">Experiência atual</span>
+              <h2>Estagiário Comercial</h2>
+              <h3>LED OUTDOOR / Plugin Eventos</h3>
+              <p>Atuação na área comercial, com foco em prospecção, atendimento ao cliente, elaboração de propostas e apoio em negociações.</p>
+              <ul>
+                <li>Prospecção e relacionamento com clientes;</li>
+                <li>Elaboração de propostas comerciais e orçamentos;</li>
+                <li>Apoio em negociações e acompanhamento de oportunidades;</li>
+                <li>Aplicação de tecnologia em soluções comerciais.</li>
+              </ul>
+              <div class="career-skills"><span>Comunicação</span><span>Negociação</span><span>Organização</span><span>Visão de negócio</span></div>
+            </div>
+
+            <div class="career-detail" data-career-detail="monitoria" hidden>
+              <span class="career-detail-tag">Experiência acadêmica</span>
+              <h2>Monitor Acadêmico</h2>
+              <h3>Algoritmos e Programação A — UFN</h3>
+              <p>Auxílio a estudantes na compreensão de lógica de programação, resolução de exercícios e desenvolvimento do raciocínio algorítmico.</p>
+              <ul>
+                <li>Atendimento de dúvidas sobre fundamentos de programação;</li>
+                <li>Apoio na organização e interpretação de códigos;</li>
+                <li>Explicação de conceitos técnicos de forma clara;</li>
+                <li>Desenvolvimento de didática e comunicação técnica.</li>
+              </ul>
+              <div class="career-skills"><span>Lógica</span><span>Didática</span><span>Algoritmos</span><span>Comunicação técnica</span></div>
+            </div>
+
+            <div class="career-detail" data-career-detail="mei" hidden>
+              <span class="career-detail-tag">Experiência autônoma</span>
+              <h2>Microempreendedor Individual</h2>
+              <h3>Gestão e atividades operacionais</h3>
+              <p>Atuação com rotinas administrativas, organização financeira e participação em processos de licitações eletrônicas.</p>
+              <ul>
+                <li>Controle de documentos e rotinas administrativas;</li>
+                <li>Organização financeira básica;</li>
+                <li>Participação em processos eletrônicos;</li>
+                <li>Condução autônoma de atividades operacionais.</li>
+              </ul>
+              <div class="career-skills"><span>Autonomia</span><span>Responsabilidade</span><span>Organização</span><span>Atenção a detalhes</span></div>
+            </div>
+
+            <div class="career-detail" data-career-detail="solar" hidden>
+              <span class="career-detail-tag">Experiência técnica</span>
+              <h2>Suporte em sistemas para energia solar</h2>
+              <h3>Instalação, aplicação e operação</h3>
+              <p>Apoio em instalação e aplicação de sistemas, com vivência prática em suporte técnico e operação.</p>
+              <ul>
+                <li>Apoio em atividades de instalação;</li>
+                <li>Suporte na utilização e operação de sistemas;</li>
+                <li>Identificação e resolução de problemas técnicos;</li>
+                <li>Contato com soluções de tecnologia aplicadas ao setor energético.</li>
+              </ul>
+              <div class="career-skills"><span>Suporte técnico</span><span>Operação</span><span>Resolução de problemas</span></div>
+            </div>
+          </article>
+        </section>
+      </div>
     </section>
   </main>
+
+  <div class="certificate-modal" id="certificate-modal" aria-hidden="true" role="dialog" aria-label="Visualização do certificado">
+    <button class="certificate-modal-close" type="button" aria-label="Fechar certificado"><i class="fa-solid fa-xmark"></i></button>
+    <img src="" alt="Certificado ampliado">
+  </div>
 
   <footer class="site-footer"><p><span>&lt;/&gt;</span> Desenvolvido por Wilson Dias Debus — <span id="current-year"></span></p></footer>
 </body>
